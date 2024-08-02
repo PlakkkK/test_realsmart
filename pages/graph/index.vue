@@ -29,14 +29,7 @@
                </div>
                <div>
                   <p class="mb-2 text-sm">Weight <span class="text-red-500">*</span></p>
-                  <input
-                     type="number"
-                     placeholder="Weight"
-                     autocomplete="off"
-                     v-model="form.data[index2].weight"
-                     class="bg-gray-50 border border-gray-300 text-sm rounded-lg w-full px-3 h-10"
-                     required
-                  />
+                  <Input type="number" placeholder="Weight" v-model="form.data[index2].weight" :required="true" />
                   <p class="text-[10px] text-gray-400 mt-2" v-text="'>100 is level 1, >200 is level 2, >300 is level 3 (<100 is level 0 ignore)'"></p>
                </div>
             </div>
