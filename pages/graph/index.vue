@@ -53,7 +53,7 @@ const store = useGraphStore();
 const formBranch = ref([
    {
       branchName: "",
-      color: "#e66465",
+      color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
       data: [],
    },
 ]);
@@ -138,7 +138,7 @@ const submitForm = (e) => {
 const btnAddBranch = () => {
    formBranch.value.push({
       branchName: "",
-      color: "#e66465",
+      color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
       data: [],
    });
 };
