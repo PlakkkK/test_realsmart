@@ -81,7 +81,7 @@ const submitForm = (e) => {
          } else {
             let fail = false;
             const datasets = {
-               backgroundColor: `#${color}`,
+               backgroundColor: color,
                borderColor: "#e9e9e9",
                data: [],
             };
