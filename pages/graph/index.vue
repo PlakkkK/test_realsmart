@@ -101,7 +101,7 @@ const submitForm = (e) => {
                      datasets.data.push({
                         x: loopData.datetime,
                         y: getRandomInt(positionMin, positionMax),
-                        r: weight === 1 ? 5 : weight === 2 ? 10 : 15,
+                        r: level === 1 ? 5 : level === 2 ? 10 : 15,
                         name: loopData.name,
                         stock: weight,
                         level,
