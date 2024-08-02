@@ -11,7 +11,7 @@
    </div>
 </template>
 <script setup>
-import BubbleChart from "~/components/ui/BubbleChart.vue";
+import BubbleChart from "~/components/BubbleChart.vue";
 import { useGraphStore } from "@/stores/index";
 const store = useGraphStore();
 
