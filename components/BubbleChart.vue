@@ -48,7 +48,6 @@ onMounted(() => {
 });
 
 const connectLinesPlugin = {
-   id: "connectLines",
    afterDatasetsDraw(chart) {
       const ctx = chart.ctx;
       const datasets = chart.data.datasets;
