@@ -108,7 +108,7 @@ const options = {
             },
             label: function (tooltipItem) {
                const { dataset, dataIndex } = tooltipItem;
-               return `In stock: ${formatCurrency(dataset.data[dataIndex].stock)} (Level: ${dataset.data[dataIndex].level})`;
+               return `Sales: ${formatCurrency(dataset.data[dataIndex].sales)} (Level: ${dataset.data[dataIndex].level})`;
             },
          },
          displayColors: false,

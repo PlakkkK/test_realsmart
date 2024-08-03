@@ -8,7 +8,7 @@ export default defineEventHandler(() => {
    };
 
    const nameMock = ["A", "B", "C", "D", "E", "F", "G", "H", "i", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-   const count = Math.floor(getRandomInt(2, 6));
+   const count = Math.floor(getRandomInt(2, 5));
    const branches = [];
    const datasets = [];
 
@@ -31,7 +31,7 @@ export default defineEventHandler(() => {
             y: getRandomInt(positionMin, positionMax),
             r: level === 1 ? 5 : level === 2 ? 10 : 15,
             name: getRandomNameRacket(nameMock),
-            stock: level === 1 ? Math.floor(getRandomInt(100, 199)) : level === 2 ? Math.floor(getRandomInt(200, 299)) : Math.floor(getRandomInt(300, 500)),
+            sales: level === 1 ? Math.floor(getRandomInt(100, 199)) : level === 2 ? Math.floor(getRandomInt(200, 299)) : Math.floor(getRandomInt(300, 500)),
             level,
          });
       }

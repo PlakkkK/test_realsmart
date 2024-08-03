@@ -25,7 +25,7 @@
                <Datepicker :id="`datepicker_${index}_${index2}`" v-model="form.data[index2].datetime" :required="true" />
                <div>
                   <p class="mb-2 text-sm">Name <span class="text-red-500">*</span></p>
-                  <Input type="text" placeholder="Branch Name" v-model="form.data[index2].name" :required="true" />
+                  <Input type="text" placeholder="Name" v-model="form.data[index2].name" :required="true" />
                </div>
                <div>
                   <p class="mb-2 text-sm">Weight <span class="text-red-500">*</span></p>
@@ -96,7 +96,7 @@ const submitForm = (e) => {
                         y: getRandomInt(positionMin, positionMax),
                         r: level === 1 ? 5 : level === 2 ? 10 : 15,
                         name: loopData.name,
-                        stock: weight,
+                        sales: weight,
                         level,
                      });
                   }

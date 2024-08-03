@@ -2,7 +2,7 @@
    <div>
       <input
          :type="type"
-         placeholder="Branch Name"
+         :placeholder="placeholder"
          autocomplete="off"
          :value="modelValue"
          :class="[

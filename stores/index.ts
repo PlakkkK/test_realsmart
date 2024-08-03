@@ -16,7 +16,7 @@ interface DataGraph {
    y: number;
    r: number;
    name: string;
-   stock: number;
+   sales: number;
    level: number;
 }
 
