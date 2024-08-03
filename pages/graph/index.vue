@@ -86,7 +86,7 @@ const submitForm = (e) => {
                } else {
                   const weight = parseInt(loopData.weight);
                   if (weight > 100) {
-                     const level = weight > 300 ? 3 : weight < 300 && weight > 200 ? 2 : 1;
+                     const level = weight > 100 && weight <= 200 ? 1 : weight > 200 && weight <= 300 ? 2 : 3;
 
                      const positionMin = parseInt(`${branches.length + 1}`);
                      const positionMax = parseFloat(`${(branches.length == 0 ? 1 : branches.length + 1) + 0.9}`);
