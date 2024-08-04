@@ -22,7 +22,8 @@ watch(
       branches = getBranches;
 
       if (chartJS) {
-         chartJS.options.scales.y.max = getBranches.length + 1;
+         // console.log(getBranches.length)
+         // chartJS.options.scales.y.max = getBranches.length + 1;
          chartJS.update();
       }
    }
@@ -129,6 +130,7 @@ const options = {
          offset: true,
          min: 1,
          ticks: {
+            stepSize: 1,
             callback: (value) => {
                return branches[value - 1];
             },
